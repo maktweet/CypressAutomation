@@ -1,6 +1,8 @@
-Feature: Test Feature
+Feature: Login Test
 
-    simple adding text
+    Verify user can login to the application
 
     Scenario: Test scenario
-    Given test is working fine
+    Given I am on login page
+    Then I enter username and password
+    Then I click on login button and I am successful Logged in
