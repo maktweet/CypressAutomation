@@ -1,20 +1,27 @@
 /// <reference types="cypress"/>
 import ContactUs from "../../pabeObjects/contact-us/contact-us.page";
 
+
+let data =""
+before(()=>{
+    cy.fixture("user").then((userDetails) => {
+        data = userDetails
+    })
+})
 Given("I am on Contact Us page", () => {
     cy.visit("/Contact-Us/contactus.html")
 });
 Then("I enter firstname", () => {
-    ContactUs.EnterFirstName("Mohammad ALi Khan")
+    ContactUs.EnterFirstName(data.contactDetails.FirstName)
 });
 And("I enter lastname", () => {
-    ContactUs.EnterLastName("Khan")
+    ContactUs.EnterLastName(data.contactDetails.LastName)
 });
 And("I enter email address", () => {
-    ContactUs.EnterEmailAddress("mak@gmail.com")
+    ContactUs.EnterEmailAddress(data.contactDetails.Email)
 });
 And("I enter comments", () => {
-    ContactUs.EnterComments("lorem ipsum test comments putting herer")
+    ContactUs.EnterComments(data.comments)
 });
 When("I click on submit button", () => {
     ContactUs.ClickOnSubmit()

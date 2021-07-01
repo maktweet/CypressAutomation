@@ -1,0 +1,11 @@
+{
+    "username":"webdriver",
+    "password":"webdriver123",
+    "contactDetails": {
+        "FirstName": "Mohammad Ali",
+        "LastName": "Khan",
+        "Email": "mak@mak.com"
+    },
+    "comments":"lorem ipsum quick brown fox jumps over the lazy dog"
+    
+}

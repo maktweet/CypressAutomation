@@ -1,5 +1,5 @@
 /// <reference types="cypress"/>
-
+// ============locators==================
 const FIRST_NAME = "[name='first_name']"
 const LAST_NAME = "[name='last_name']"
 const EMAIL_ADD = "[name='email']"
@@ -7,6 +7,7 @@ const MESSAGE_FIELD = "[name='message']"
 const SUBMIT_CONTACT_FORM = "[type='submit']"
 const SUBMISSION_TEXT = "#contact_reply"
 const REQUIRED_TEXT = "body"
+// ============locators==================
 class ContactUs{
 
     static EnterFirstName(name){

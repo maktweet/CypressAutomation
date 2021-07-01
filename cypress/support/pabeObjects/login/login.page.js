@@ -1,9 +1,9 @@
 /// <reference types="cypress"/>
-
+// ============locators==================
 const TXT_USERNAME = "#text";
 const TXT_PASSWORD = "#password";
 const BTN_LOGIN = "#login-button";
-
+// ============locators==================
 class LoginPage {
 
   static EnterUserNameAndPassword(username, password) {
