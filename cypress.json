@@ -2,5 +2,6 @@
   "baseUrl" : "http://www.webdriveruniversity.com",
   "viewportWidth": 1920,
   "viewportHeight": 1080,
-  "testFiles": "**/*.{feature,features}"
+  "testFiles": "**/*.{feature,features}",
+  "retries":1
 }

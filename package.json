@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
-    "report":"node generate-report.js"
+    "result": "node get-result.js",
+    "clean":"del-cli --force cypress/cucumber-json cypress/output/*"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,8 @@
   "devDependencies": {
     "cucumber-html-reporter": "^5.4.0",
     "cypress": "^7.6.0",
-    "cypress-cucumber-preprocessor": "^4.1.2"
+    "cypress-cucumber-preprocessor": "^4.1.2",
+    "del-cli": "^4.0.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
