@@ -1,5 +1,5 @@
 /// <reference types="cypress"/>
-import { Given } from "cypress-cucumber-preprocessor/steps";
+
 import LoginPage from "../../pabeObjects/login/login.page";
 
 Given("I am on login page", () => {
